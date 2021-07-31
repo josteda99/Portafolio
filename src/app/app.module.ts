@@ -9,6 +9,9 @@ import { OriunComponent } from './oriun/oriun.component';
 import { MemophotoComponent } from './memophoto/memophoto.component';
 import { AboutComponent } from './about/about.component';
 import { FormsModule } from '@angular/forms';
+import { LoadScreenComponent } from './load-screen/load-screen.component';
+import { LoadScreenEndComponent } from './load-screen-end/load-screen-end.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { FormsModule } from '@angular/forms';
     PresentationComponent,
     OriunComponent,
     MemophotoComponent,
-    AboutComponent
+    AboutComponent,
+    LoadScreenComponent,
+    LoadScreenEndComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

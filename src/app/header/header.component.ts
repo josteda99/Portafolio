@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { sleep } from 'sleep-ts';
+
 @Component({
-  selector: 'app-presentation',
-  templateUrl: './presentation.component.html',
-  styleUrls: ['./presentation.component.scss'],
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss'],
 })
-export class PresentationComponent implements OnInit {
+export class HeaderComponent implements OnInit {
   show: boolean = false;
   constructor(private router: Router, private route: ActivatedRoute) {}
 

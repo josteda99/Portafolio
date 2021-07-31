@@ -1,3 +1,5 @@
+<load-screen *ngIf="show == true"></load-screen>
+
 <body>
   <div class="presentation">
     <div class="container">
@@ -17,6 +19,8 @@
         </div>
       </div>
     </div>
-    <button class="projects" [routerLink]="['projects']"><i class=" fa fa-angle-left"></i></button>
+    <button class="projects" (click)="showAnimation()"><i class=" fa fa-angle-left"></i></button>
   </div>
 </body>
+
+<!-- [routerLink]="['projects']" -->

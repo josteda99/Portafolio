@@ -1,0 +1,38 @@
+$darkBlue: #1c1427;
+$dark: #080211;
+$blue : #40394A;
+$green :#7ECA9C;
+$lightGreen: #CCFFBD;
+$red: #e1306c;
+
+.container-fluid {
+  background-color: $darkBlue;
+  height: 100vh;
+  width: 100%;
+}
+
+.salute {
+  color: $green;
+  font-size: 20px;
+}
+
+.name {
+  color: $lightGreen;
+  font-size: 50px;
+
+}
+
+.description {
+  color: $green;
+  padding-top: 20px;
+
+  .icon {
+    color: $red;
+  }
+
+}
+
+.section {
+  padding-left: 75px;
+  padding-right: 75px;
+}
