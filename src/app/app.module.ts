@@ -5,16 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { PresentationComponent } from './presentation/presentation.component';
+import { OriunComponent } from './oriun/oriun.component';
+import { MemophotoComponent } from './memophoto/memophoto.component';
+import { AboutComponent } from './about/about.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProjectsComponent,
-    PresentationComponent
+    PresentationComponent,
+    OriunComponent,
+    MemophotoComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
