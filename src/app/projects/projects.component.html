@@ -1,4 +1,5 @@
 <load-screen-end *ngIf="show == true"></load-screen-end>
+<load-screen *ngIf="goToRoot == true"></load-screen>
 
 <body class="scroll">
   <div class="projects">
@@ -23,21 +24,21 @@
         </div>
         <div class="col-md-6 col-sm-12 px-0 work">
           <div class="row spe mx-0 ">
-            <a [routerLink]="['oriun']" class="col px-0 first">
+            <a (click)="showAnimation('oriun')" class="col px-0 first">
               <h3 class="pro-info tit">OriUN</h3>
               <p class="pro-info des">A web application to create and manage sporting events</p>
             </a>
-            <a [routerLink]="['memophoto']" class="col px-0 second">
+            <a (click)="showAnimation('memo')" class="col px-0 second">
               <h3 class="pro-info tit">Memophoto</h3>
               <p class="pro-info des">Game that helps to develop photographic memory</p>
             </a>
           </div>
           <div class="row spe mx-0 ">
-            <a href="#" class="col px-0 three">
-              <h3 class="pro-info tit">RasskingBall</h3>
+            <a (click)="showAnimation('rass')" class="col px-0 three">
+              <h3 class="pro-info tit">Rassking</h3>
               <p class="pro-info des">Platformer game to break own records with house music</p>
             </a>
-            <a [routerLink]="['../about']" class="col px-0 last">
+            <a (click)="showAnimation('about')" class="col px-0 last">
               <h3 class="pro-info tit">About me</h3>
               <p class="pro-info des">Just Click me</p>
             </a>

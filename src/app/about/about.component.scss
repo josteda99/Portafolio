@@ -46,11 +46,7 @@ $red: #e1306c;
       width: 100%;
     }
   }
-
-
 }
-
-
 
 .skills {
   padding-left: 30px;
@@ -264,4 +260,99 @@ $red: #e1306c;
   }
 
 
+
+
+}
+
+.contact-title {
+  .title {
+    color: $red;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .description {
+    color: $lightGreen;
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+.form {
+  input {
+    height: 50px;
+    margin: 5px 5px 5px 5px;
+    padding-left: 30px;
+    background-color: $dark;
+    outline: none;
+    border: 0;
+    color: $lightGreen;
+  }
+
+  input::placeholder {
+    color: $green;
+  }
+
+  .subject {
+    width: 98%;
+    outline: none;
+    border: 0;
+    color: $lightGreen;
+  }
+
+  .message {
+    margin: 5px 5px 5px 5px;
+    padding-left: 30px;
+    padding-top: 10px;
+    width: 98%;
+    min-height: 50px;
+    max-height: 100px;
+    background-color: $dark;
+    outline: none;
+    border: 0;
+    color: $lightGreen;
+  }
+
+  .message::placeholder {
+    color: $green;
+  }
+
+  .message:focus {
+    border-bottom: 3px solid $red;
+    color: $lightGreen;
+  }
+
+  .name-inp:focus {
+    border-bottom: 3px solid $red;
+    color: $lightGreen;
+  }
+
+  .email:focus {
+    border-bottom: 3px solid $red;
+    color: $lightGreen;
+  }
+
+  .subject:focus {
+    border-bottom: 3px solid $red;
+    color: $lightGreen;
+  }
+
+  .send {
+    background-color: $dark;
+    color: $lightGreen;
+    height: 50px;
+    margin-bottom: 50px;
+    border: 2px solid $lightGreen;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 615px) {
+  .name-inp {
+    width: 98%;
+  }
+
+  .email {
+    width: 98%;
+  }
 }

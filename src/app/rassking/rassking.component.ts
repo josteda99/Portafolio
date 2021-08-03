@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { sleep } from 'sleep-ts';
 
 @Component({
-  selector: 'app-oriun',
-  templateUrl: './oriun.component.html',
-  styleUrls: ['./oriun.component.scss'],
+  selector: 'app-rassking',
+  templateUrl: './rassking.component.html',
+  styleUrls: ['./rassking.component.scss'],
 })
-export class OriunComponent implements OnInit {
+export class RasskingComponent implements OnInit {
   show: boolean = true;
   constructor() {}
 

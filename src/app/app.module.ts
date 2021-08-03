@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { LoadScreenComponent } from './load-screen/load-screen.component';
 import { LoadScreenEndComponent } from './load-screen-end/load-screen-end.component';
 import { HeaderComponent } from './header/header.component';
+import { RasskingComponent } from './rassking/rassking.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HeaderComponent } from './header/header.component';
     AboutComponent,
     LoadScreenComponent,
     LoadScreenEndComponent,
-    HeaderComponent
+    HeaderComponent,
+    RasskingComponent
   ],
   imports: [
     BrowserModule,
