@@ -22,11 +22,16 @@ $red: #e1306c;
     .link {
       text-decoration: none;
       color: $lightGreen;
+
+      &:hover {
+        animation: glow .5s linear infinite .5s;
+      }
     }
 
     .title {
       color: $green;
       font-size: 50px;
+      animation: glow 2500ms linear infinite 2000ms;
     }
 
     .description {
@@ -35,6 +40,10 @@ $red: #e1306c;
 
     .technologies {
       color: $red;
+
+      &:hover {
+        animation: glitch 1s linear infinite;
+      }
     }
 
     .tech {
@@ -42,7 +51,42 @@ $red: #e1306c;
     }
   }
 
+
   .bord {
     box-shadow: 1.5rem 1.5rem $dark;
+  }
+
+  .carsli {
+    margin-right: 80px;
+  }
+
+  @media (max-width: 766px) {
+    .carsli {
+      margin-right: 0px;
+    }
+  }
+
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #fff;
+    }
+  }
+
+
+  @keyframes glitch {
+
+    2%,
+    64% {
+      transform: translate(2px, 0) skew(0deg);
+    }
+
+    4%,
+    60% {
+      transform: translate(-2px, 0) skew(0deg);
+    }
+
+    62% {
+      transform: translate(0, 0) skew(5deg);
+    }
   }
 }

@@ -26,6 +26,10 @@ $red: #e1306c;
     .title {
       color: $green;
       font-size: 50px;
+
+      &:hover {
+        animation: glow 1.5s linear infinite;
+      }
     }
 
     .description {
@@ -51,5 +55,14 @@ $red: #e1306c;
     box-shadow: 1.5rem 1.5rem $dark;
   }
 
+  @keyframes glow {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
 
 }

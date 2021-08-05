@@ -13,6 +13,7 @@ import { LoadScreenComponent } from './load-screen/load-screen.component';
 import { LoadScreenEndComponent } from './load-screen-end/load-screen-end.component';
 import { HeaderComponent } from './header/header.component';
 import { RasskingComponent } from './rassking/rassking.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,14 +26,10 @@ import { RasskingComponent } from './rassking/rassking.component';
     LoadScreenComponent,
     LoadScreenEndComponent,
     HeaderComponent,
-    RasskingComponent
+    RasskingComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

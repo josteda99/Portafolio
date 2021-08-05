@@ -25,6 +25,19 @@ $red: #e1306c;
     color: $lightGreen;
     font-size: 50px;
 
+    &:hover {
+      animation: glow .5s linear infinite .5s;
+    }
+  }
+
+  @keyframes glow {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+
+    100% {
+      filter: hue-rotate(360deg);
+    }
   }
 
   .description {
@@ -47,6 +60,8 @@ $red: #e1306c;
     }
   }
 }
+
+
 
 .skills {
   padding-left: 30px;
@@ -258,10 +273,6 @@ $red: #e1306c;
       display: none;
     }
   }
-
-
-
-
 }
 
 .contact-title {
@@ -341,7 +352,7 @@ $red: #e1306c;
     background-color: $dark;
     color: $lightGreen;
     height: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     border: 2px solid $lightGreen;
     margin-right: 5px;
   }

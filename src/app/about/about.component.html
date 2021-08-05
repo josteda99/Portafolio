@@ -85,13 +85,17 @@
     </div>
     <div class="row py-4 contact-title">
       <div class="col d-inline-flex justify-content-center">
-        <form action="submit" class="form">
-          <input type="text" class="name-inp my-2" id="name-inp" placeholder="Name">
-          <input type="text" class="email my-2" id="email" placeholder="Email">
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="form">
+          <input type="text" name="name" ngModel required #name="ngModel" class="name-inp my-2" id="name-inp"
+            placeholder="Name">
+          <input type="text" name="email" ngModel required #email="ngModel" class="email my-2" id="email"
+            placeholder="Email">
           <br>
-          <input type="text" class="subject my-2" id="subject" placeholder="Subject">
+          <input type="text" name="subject" ngModel required #subject="ngModel" class="subject my-2" id="subject"
+            placeholder="Subject">
           <br>
-          <textarea name="" class="message my-2" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+          <textarea name="message" ngModel required #message="ngModel" class="message my-2" id="message" cols="30"
+            rows="10" placeholder="Message"></textarea>
           <br>
           <div class="col d-flex justify-content-end">
             <button class="send px-5 mt-2" type="submit">Send Message!</button>
@@ -100,5 +104,4 @@
       </div>
     </div>
   </div>
-
 </div>
